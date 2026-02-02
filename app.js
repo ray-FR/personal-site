@@ -44,7 +44,7 @@ document.getElementById('language').addEventListener('change', () => {
       element.innerText = 'Bienvenue sur mon site';
     });
     
-  } else if (language.value == 'en'){
+  } else{
     Array.from(title).forEach((element) => {
       element.innerText = 'Hello!';
     });
