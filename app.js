@@ -21,12 +21,9 @@ button.addEventListener('click', function() {
         button.classList.toggle('active');
 }});
 
-
-menu[0].innerText = "Hi";
+//menu[0].innerText = "Hi";
 
 language.addEventListener('change', () => {
-  isChanged = 1;
-  console.log(isChanged);
   console.log(language.value);
   if (language.value == 'fr') { 
     Array.from(title).forEach((element) => {
@@ -35,6 +32,7 @@ language.addEventListener('change', () => {
     Array.from(text).forEach((element) => {
       element.innerText = 'Bienvenue sur mon site';
     });
+    //TODO: implement translations here
     
   } else{
     Array.from(title).forEach((element) => {
@@ -45,3 +43,5 @@ language.addEventListener('change', () => {
     });
   }
 });
+
+
