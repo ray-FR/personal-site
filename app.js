@@ -3,8 +3,8 @@ const title = document.getElementsByClassName('title');
 const text = document.getElementsByClassName('text');
 const language = document.getElementById('language');
 
-
-
+const menuItems = document.getElementById('menu-items').children;
+let isChanged = 0;
 
 button.classList.toggle('active');
 
@@ -22,10 +22,11 @@ button.addEventListener('click', function() {
 }});
 
 
-
-  
+menu[0].innerText = "Hi";
 
 language.addEventListener('change', () => {
+  isChanged = 1;
+  console.log(isChanged);
   console.log(language.value);
   if (language.value == 'fr') { 
     Array.from(title).forEach((element) => {
