@@ -8,7 +8,7 @@ const language = document.getElementById('language');
 
 button.classList.toggle('active');
 
-document.getElementById('hamburger-menu').addEventListener('click', function() {
+button.addEventListener('click', function() {
     document.querySelector('.container').classList.toggle('inactive');
     document.getElementById('menu').classList.toggle('active');
     
@@ -34,7 +34,7 @@ Array.from(document.getElementsByClassName("menu-item"))
 
   
 
-document.getElementById('language').addEventListener('change', () => {
+language.addEventListener('change', () => {
   console.log(language.value);
   if (language.value == 'fr') { 
     Array.from(title).forEach((element) => {
