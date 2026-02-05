@@ -26,12 +26,9 @@ button.addEventListener('click', function() {
 language.addEventListener('change', () => {
   console.log(language.value);
   if (language.value == 'fr') { 
-    Array.from(title).forEach((element) => {
-      element.innerText = 'Bonjour!';
-    });
-    Array.from(text).forEach((element) => {
-      element.innerText = 'Bienvenue sur mon site';
-    });
+    title[0].innerText = 'Bonjour!';
+    text[0].innerText = 'Bienvenue sur mon site';
+    
     menuItems[0].innerText = "Application météo";
     menuItems[1].innerText = "Visualisation d'ABR";
     menuItems[2].innerText = "Mini Projets Python";
