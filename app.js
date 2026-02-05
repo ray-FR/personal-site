@@ -42,6 +42,10 @@ language.addEventListener('change', () => {
     Array.from(text).forEach((element) => {
       element.innerText = 'Welcome to my website';
     });
+    menuItems[0].innerText = "Weather App";
+    menuItems[1].innerText = "Tree Visualisation";
+    menuItems[2].innerText = "Mini Python Projects";
+
   }
 });
 
