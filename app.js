@@ -28,19 +28,16 @@ language.addEventListener('change', () => {
   if (language.value == 'fr') { 
     title[0].innerText = 'Bonjour!';
     text[0].innerText = 'Bienvenue sur mon site';
-    
+
     menuItems[0].innerText = "Application météo";
     menuItems[1].innerText = "Visualisation d'ABR";
     menuItems[2].innerText = "Mini Projets Python";
     
     
   } else{
-    Array.from(title).forEach((element) => {
-      element.innerText = 'Hello!';
-    });
-    Array.from(text).forEach((element) => {
-      element.innerText = 'Welcome to my website';
-    });
+    title[0].innerText = 'Hello!';
+    text[0].innerText = 'Welcome to my site';
+    
     menuItems[0].innerText = "Weather App";
     menuItems[1].innerText = "Tree Visualisation";
     menuItems[2].innerText = "Mini Python Projects";
