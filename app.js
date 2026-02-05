@@ -32,7 +32,9 @@ language.addEventListener('change', () => {
     Array.from(text).forEach((element) => {
       element.innerText = 'Bienvenue sur mon site';
     });
-    //TODO: implement translations here
+    menuItems[0].innerText = "Application météo";
+    menuItems[1].innerText = "Visualisation d'ABR";
+    menuItems[2].innerText = "Mini Projets Python";
     
   } else{
     Array.from(title).forEach((element) => {
