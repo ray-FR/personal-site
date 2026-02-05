@@ -4,7 +4,6 @@ const text = document.getElementsByClassName('text');
 const language = document.getElementById('language');
 
 const menuItems = document.getElementById('menu-items').children;
-let isChanged = 0;
 
 button.classList.toggle('active');
 
