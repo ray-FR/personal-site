@@ -12,13 +12,14 @@ button.addEventListener('click', function() {
     document.getElementById('menu').classList.toggle('active');
     
     if (button.classList.contains('active')) {
-        button.innerText = 'Close';
+        button.innerText = (language.value == 'en') ? 'Close' : 'Fermer';
         button.classList.toggle('active');
         
     } else {
-        button.innerText = 'Projets ☰';
-        button.classList.toggle('active');
-}});
+        button.innerText = (language.value == 'en') ? 'Projects ☰' : 'Projets ☰';
+        button.classList.toggle('active');}
+
+});
 
 //menu[0].innerText = "Hi";
 
@@ -34,6 +35,7 @@ language.addEventListener('change', () => {
     menuItems[0].innerText = "Application météo";
     menuItems[1].innerText = "Visualisation d'ABR";
     menuItems[2].innerText = "Mini Projets Python";
+    
     
   } else{
     Array.from(title).forEach((element) => {
